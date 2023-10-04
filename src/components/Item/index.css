@@ -1,0 +1,41 @@
+.itemContainer{
+  box-sizing: border-box;
+  width: 15%;
+  margin-bottom: 24px;
+  padding: 12px 15px;
+  border: 1px solid;
+  border-color: #e3e5e8;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.itemContainer:hover {
+  cursor: pointer;
+  border-color: #0271e1;
+}
+
+.homeLink{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  color: #0271e1;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.icon {
+  margin-bottom: 5px;
+}
+
+.icon img{
+  width: 35px;
+  height: 35px;
+  color: #0271e1;
+}

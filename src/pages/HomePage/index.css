@@ -1,0 +1,15 @@
+.homeSection{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.homeSection h1{
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.homeDesc{
+  font-size: 1.25rem;
+  color: #6c7881;
+}

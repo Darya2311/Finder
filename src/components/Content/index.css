@@ -1,0 +1,35 @@
+.contentContainer {
+  margin-top: 24px;
+  width: 100%;
+}
+
+.mainContent{
+  margin-bottom: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.expansionAreaToggler {
+  display: flex;
+  justify-content: center;
+}
+
+.expansionAreaToggler button {
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  color: #0271e1;
+  font-size: 1.125rem;
+}
+
+.expansionAreaToggler button:hover{
+  cursor: pointer;
+}
+
+.expansionAreaToggler button img {
+  width: 20px;
+  height: 15px;
+  margin-left: 5px;
+}
