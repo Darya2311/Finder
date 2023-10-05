@@ -1,7 +1,6 @@
 .homeSection{
-  max-width: 1200px;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 50px 100px;
 }
 
 .homeSection h1{
@@ -12,4 +11,10 @@
 .homeDesc{
   font-size: 1.25rem;
   color: #6c7881;
+}
+
+@media (max-width: 900px) {
+  .homeSection{
+    padding: 50px 50px;
+  }
 }

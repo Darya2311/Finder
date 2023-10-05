@@ -1,11 +1,25 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './index.css';
 import { Item } from '../Item';
 import { LINKS } from '../../shared/constants/links';
 
 export const Content = () => {
 	const [isHidden, setIsHidden] = useState(true);
-	const preview = LINKS.slice(0, 6);
+	const [screenWwidth, setScreenWwidth] = useState(window.screen.width);
+	const preview = screenWwidth > 900 || screenWwidth < 600 ? LINKS.slice(0, 6) : LINKS.slice(0, 4);
+
+	useEffect(() => {
+		const handleResize = (event: Event) => {
+			const target = event.target as Window;
+			setScreenWwidth(target.screen.width);
+		};
+
+		window.addEventListener('resize', handleResize);
+
+		return () => {
+			window.removeEventListener('resize', handleResize);
+		};
+	}, []);
 
 	return (
 		<div className="contentContainer">

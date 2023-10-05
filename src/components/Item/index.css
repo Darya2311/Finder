@@ -39,3 +39,15 @@
   height: 35px;
   color: #0271e1;
 }
+
+@media (max-width: 900px) {
+  .itemContainer{
+    width: 22%;
+  }
+}
+
+@media (max-width: 600px) {
+  .itemContainer{
+    width: 48%;
+  }
+}
